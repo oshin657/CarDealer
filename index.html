@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="car.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="2646F2E4-84E5-4BDC-B9D8-240F235DFE20.jpeg"
+              alt="CarDealership Logo"
+              width="50px"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News & Videos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Research & Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">New Cars</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sell Your Car</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Financing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Cars List
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Buggati</a></li>
+                  <li><a class="dropdown-item" href="#">Aston Martin</a></li>
+                  <li><a class="dropdown-item" href="#">BMW</a></li>
+                  <li><a class="dropdown-item" href="#">Mercedes-Benz</a></li>
+                  <li><a class="dropdown-item" href="#">Honda</a></li>
+                  <li><a class="dropdown-item" href="#">Toyota</a></li>
+                  <li><a class="dropdown-item" href="#">Hyundai-Kia</a></li>
+                  <li><a class="dropdown-item" href="#">McLaren</a></li>
+
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search Car Brand"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-primary" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="slider-section">
+      <div class="container">
+        <div class="owl-carousel owl-theme" id="intro-slider">
+          <div class="slide">
+            <img src="7612D347-F0E6-4E85-B73C-1D0CABF312E9.jpeg" />
+            <div class="car-info">
+              <h2>Bugatti Chiron</h2>
+              <p>
+                Unmatched speed and power with an 8.0L quad-turbocharged W16
+                engine.
+              </p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="9FBB31B3-97C1-43E6-8C0F-D7EAD47F5627.jpeg" />
+            <div class="car-info">
+              <h2>Rolls Royce</h2>
+              <p>
+                The epitome of luxury, offering a smooth, silent ride, a
+                handcrafted interior, and a powerful V12 engine for ultimate
+                elegance and comfort.
+              </p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="5F67FF24-CAEF-41D3-9E84-E809CB13174D.jpeg" />
+            <div class="car-info">
+              <h2>McLaren</h2>
+              <p>
+                Luxury redefined. Handcrafted elegance meets thrilling
+                performance in a smooth, powerful ride.
+              </p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="BB0E599D-CB40-4B9F-AD74-B0C956061CEF.jpeg" />
+            <div class="car-info">
+              <h2>Koenigsegg</h2>
+              <p>
+                Hypercar perfection. Handcrafted, innovative, and mind-bendingly
+                fast.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="fillform">
+          <h2 class="form-title">Find Your Dream Car</h2>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="car-condition">New/Used Cars</label>
+              <select id="car-condition" class="form-control">
+                <option value="New">New</option>
+                <option value="Used">Used</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="car-brand">Car Brand</label>
+              <select id="car-brand" class="form-control">
+                <option value="Rolls-Royce">Rolls-Royce</option>
+                <option value="Bugatti">Bugatti</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Porsche">Porsche</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="car-price">Price Range</label>
+              <input
+                type="number"
+                id="car-price"
+                class="form-control"
+                placeholder="Enter price"
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="car-year">Year</label>
+              <input
+                type="number"
+                id="car-year"
+                class="form-control"
+                placeholder="Enter year"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="car-mileage">Mileage (km)</label>
+              <input
+                type="number"
+                id="car-mileage"
+                class="form-control"
+                placeholder="Enter mileage"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="car-color">Car Color</label>
+              <select id="car-color" class="form-control">
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+                <option value="Silver">Silver</option>
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+              </select>
+            </div>
+          </div>
+
+          <a href="Rolls.html"
+            ><button class="btn btn-primary" type="submit">Search</button></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="popular-categories">
+      <div class="container">
+        <h2 class="section-title">Popular Categories</h2>
+
+        <div class="categories-slider">
+          <button class="slider-btn prev-btn" onclick="moveSlide(-1)">
+            &#10094;
+          </button>
+
+          <div class="categories-wrapper">
+            <div class="categories-row">
+              <div class="category-card">
+                <img
+                  src="A779E4CF-66AB-43FD-ADA3-13D7421D3031 2.jpeg"
+                  alt="Luxury Cars"
+                  class="category-img"
+                />
+                <div class="category-info">
+                  <h3>Luxury Cars</h3>
+                  <p>
+                    Explore the world of luxury with the most exquisite cars.
+                  </p>
+                  <a href="#">Shop now!</a>
+                </div>
+              </div>
+
+              <div class="category-card">
+                <img
+                  src="7AB326A3-E70D-43C3-86A3-05186F8F6F7C.jpeg"
+                  alt="Sports Cars"
+                  class="category-img"
+                />
+                <div class="category-info">
+                  <h3>Sports Cars</h3>
+                  <p>Fast, sleek, and designed for performance lovers.</p>
+                  <a href="#">Shop now!</a>
+                </div>
+              </div>
+
+              <div class="category-card">
+                <img
+                  src="02F0AE66-59DF-44DD-B6C2-49DB9187986C.jpeg"
+                  alt="Electric Cars"
+                  class="category-img"
+                />
+                <div class="category-info">
+                  <h3>Electric Cars</h3>
+                  <p>Future-proof your ride with eco-friendly electric cars.</p>
+                  <a href="#">Shop now!</a>
+                </div>
+              </div>
+
+              <div class="category-card">
+                <img
+                  src="ECB8B761-CA83-45E7-A9C4-D46ED1E87741.jpeg"
+                  alt="Coupe"
+                  class="category-img"
+                />
+                <div class="category-info">
+                  <h3>Coupe</h3>
+                  <p>Compact, stylish, and built for performance.</p>
+                  <a href="#">Shop now!</a>
+                </div>
+              </div>
+
+              <div class="category-card">
+                <img
+                  src="85699576-54FF-45BC-BA79-9EFD3894E4BB.jpeg"
+                  alt="Wagon"
+                  class="category-img"
+                />
+                <div class="category-info">
+                  <h3>Wagon</h3>
+                  <p>Spacious and versatile for all your adventures.</p>
+                  <a href="#">Shop now!</a>
+                </div>
+              </div>
+
+              <div class="category-card">
+                <img
+                  src="074AD79F-290F-4C59-A67F-9D86C6B8BB4C.jpeg"
+                  alt="SUV"
+                  class="category-img"
+                />
+                <div class="category-info">
+                  <h3>SUV</h3>
+                  <p>Explore off-road capabilities with style and comfort.</p>
+                  <a href="#">Shop now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="slider-btn next-btn" onclick="moveSlide(1)">
+            &#10095;
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-3">
+      <div class="container">
+        <div class="garage">
+          <div class="garage-left">
+            <h5>Your Garage</h5>
+            <h5>Add your car. Track its value.</h5>
+            <p>
+              Add your car to Your Garage to track its market value and cash in
+              when the time is right to sell. <a href="#">Learn more</a>
+            </p>
+            <div>
+              <button>Get Started</button>
+            </div>
+            <p class="mt-3">
+              Already have an account? <a href="#">Sign in.</a>
+            </p>
+          </div>
+          <div class="garage-right">
+            <img
+              src="https://www.cars.com/images/garage-landing/garage-hero.webp"
+              alt="Car Image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5 sell-section">
+      <div class="container">
+        <span class="sell-heading">Sell your car your way</span>
+        <div class="sell">
+          <div class="offer">
+            <div class="offer-img">
+              <img
+                src="69886BB0-963F-458A-8679-786D95181727_4_5005_c.jpeg"
+                alt="Offer"
+              />
+            </div>
+            <div class="offer-text">
+              <p>
+                <span class="bold-text;">Get an offer online</span>
+                and quickly complete the transaction with a local dealer.
+              </p>
+            </div>
+          </div>
+          <div class="offer">
+            <div class="offer-img">
+              <img
+                src="8BB3DE7C-B96A-47F8-A9B3-05F0B594A330_4_5005_c.jpeg"
+                alt="Offer"
+              />
+            </div>
+            <div class="offer-text">
+              <p>
+                <span class="bold-text">List your car for free.</span>
+                Set your own price and easily showcase your car on Cars.com.
+              </p>
+            </div>
+          </div>
+          <div class="offer car-image">
+            <img src="036138FF-9AF9-4DFD-B107-F3589E91BF8C.jpeg" alt="Car" />
+          </div>
+        </div>
+        <button class="sell-button">Get started</button>
+      </div>
+    </section>
+
+    <section class="latest-inventory">
+      <div class="container">
+        <h2 class="inventory-heading">Latest Inventory</h2>
+        <div class="inventory-grid">
+          <!-- Car 1 -->
+          <div class="car-card">
+            <div class="car-img">
+              <img
+                src="90A1D50D-5508-4D10-BF13-BE51899C90FD.jpeg"
+                alt="Car 1"
+              />
+              <span class="car-price">$355,000</span>
+            </div>
+            <div class="car-details">
+              <h3>lamborghini revuelto</h3>
+              <p><strong>Fuel Type:</strong> Gasoline</p>
+              <p><strong>Transmission:</strong> Automatic</p>
+              <p><strong>Color:</strong> Black</p>
+            </div>
+          </div>
+
+          <!-- Car 2 -->
+          <div class="car-card">
+            <div class="car-img">
+              <img
+                src="4082C693-A567-409B-9DA3-33151D888D92.jpeg"
+                alt="Car 2"
+              />
+              <span class="car-price">$140,000</span>
+            </div>
+            <div class="car-details">
+              <h3>BMW i8</h3>
+              <p><strong>Fuel Type:</strong> Electric</p>
+              <p><strong>Transmission:</strong> Automatic</p>
+              <p><strong>Color:</strong> White</p>
+            </div>
+          </div>
+
+          <!-- Car 3 -->
+          <div class="car-card">
+            <div class="car-img">
+              <img
+                src="0D9C598E-4374-42D6-8B03-0302655D0E6B.jpeg"
+                alt="Car 3"
+              />
+              <span class="car-price">$90,000</span>
+            </div>
+            <div class="car-details">
+              <h3>Ford Mustang</h3>
+              <p><strong>Fuel Type:</strong> Petrol</p>
+              <p><strong>Transmission:</strong> Manual</p>
+              <p><strong>Color:</strong> Red</p>
+            </div>
+          </div>
+
+          <!-- Car 4 -->
+          <div class="car-card">
+            <div class="car-img">
+              <img
+                src="B06BF7AA-61A8-4212-AF16-B96F1A3F05AC.jpeg"
+                alt="Car 4"
+              />
+              <span class="car-price">$260,000</span>
+            </div>
+            <div class="car-details">
+              <h3>Ferrari 488 Spider Convertible</h3>
+              <p><strong>Fuel Type:</strong> Gasoline</p>
+              <p><strong>Transmission:</strong> Automatic</p>
+              <p><strong>Color:</strong> Blue</p>
+            </div>
+          </div>
+
+          <!-- Car 5 -->
+          <div class="car-card">
+            <div class="car-img">
+              <img
+                src="DA41F89B-2833-42F5-B007-7224803AB058.jpeg"
+                alt="Car 5"
+              />
+              <span class="car-price">$358,000</span>
+            </div>
+            <div class="car-details">
+              <h3>McLaren 750s</h3>
+              <p><strong>Fuel Type:</strong> Gasoline</p>
+              <p><strong>Transmission:</strong> Automatic</p>
+              <p><strong>Color:</strong> Orange</p>
+            </div>
+          </div>
+
+          <!-- Car 6 -->
+          <div class="car-card">
+            <div class="car-img">
+              <img
+                src="36AD0D53-DB8A-4675-9B9B-EC563687C521.jpeg"
+                alt="Car 6"
+              />
+              <span class="car-price">$80,000</span>
+            </div>
+            <div class="car-details">
+              <h3>Chevy Corvette</h3>
+              <p><strong>Fuel Type:</strong> diesel</p>
+              <p><strong>Transmission:</strong> Automatic</p>
+              <p><strong>Color:</strong> Silver</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- View More Button -->
+        <button class="view-more">View More</button>
+      </div>
+    </section>
+
+    <section id="car-accessories">
+      <div class="container">
+        <h2>Upgrade Your Ride</h2>
+        <p class="subtitle">
+          Enhance your driving experience with our premium car accessories.
+        </p>
+        <div class="accessories-grid">
+          <div class="accessory">
+            <img
+              src="1BCF467D-8AC1-4738-8777-AD6263AB7789.jpeg"
+              loading="lazy"
+            />
+            <div class="accessory-details">
+              <h3>Steering Wheel Cover</h3>
+              <p>Premium leather, comfortable grip.</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="accessory">
+            <img
+              src="EB6928AF-95EA-4DC2-A629-05B0A0987E5E.jpeg"
+              alt="Car Phone Holder"
+              loading="lazy"
+            />
+            <div class="accessory-details">
+              <h3>Car Phone Holder</h3>
+              <p>Securely mount your phone.</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="accessory">
+            <img
+              src="02A44A99-B127-4187-A0B6-D521E724618B.jpeg"
+              alt="Seat Covers"
+              loading="lazy"
+            />
+            <div class="accessory-details">
+              <h3>Seat Covers</h3>
+              <p>Protect your seats in style.</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="accessory">
+            <img
+              src="AE38A982-75D8-44E3-8C1C-5F02D7669487.jpeg"
+              alt="Car Charger"
+              loading="lazy"
+            />
+            <div class="accessory-details">
+              <h3>Car Charger</h3>
+              <p>Keep your devices powered up.</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="accessory">
+            <img
+              src="0C2264E0-A874-4C9B-BC9F-241CFF47CDEC.jpeg"
+              alt="Dash Cam"
+              loading="lazy"
+            />
+            <div class="accessory-details">
+              <h3>Dash Cam</h3>
+              <p>Record your drives for safety.</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="accessory">
+            <img
+              src="C26C2A57-922E-4C5D-9148-FEF36D0D1A9A.jpeg"
+              alt="Air Freshener"
+              loading="lazy"
+            />
+            <div class="accessory-details">
+              <h3>Air Freshener</h3>
+              <p>Keep your car smelling fresh.</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="accessory">
+            <img
+              src="1C988026-36ED-4B0F-8DEF-0A01F202DB28.jpeg"
+              loading="lazy"
+            />
+            <div class="accessory-details">
+              <h3>Floor Mats</h3>
+              <p>Protect your car's flooring.</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-choose-us">
+      <div class="container">
+        <h2>Why Choose Us?</h2>
+        <div class="reasons">
+          <div class="reason">
+            <i class="fas fa-star"></i>
+            <h4>Top Quality Cars</h4>
+            <p>
+              We provide well-maintained and high-quality vehicles for every
+              need.
+            </p>
+          </div>
+          <div class="reason">
+            <i class="fas fa-handshake"></i>
+            <h4>Trust & Transparency</h4>
+            <p>100% transparent process with no hidden charges.</p>
+          </div>
+          <div class="reason">
+            <i class="fas fa-user-shield"></i>
+            <h4>Reliable Service</h4>
+            <p>
+              Customer satisfaction is our top priority with excellent support.
+            </p>
+          </div>
+          <div class="reason">
+            <i class="fas fa-dollar-sign"></i>
+            <h4>Best Market Price</h4>
+            <p>Get the best value for your car with competitive pricing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trusted-by">
+      <div class="container">
+        <h2>Trusted By Leading Automakers</h2>
+        <div class="marquee">
+          <div class="marquee-content">
+            <img src="0C9E8BC7-2DE1-4153-94E4-565E18703FB6.jpeg" alt="BMW" />
+            <img
+              src="697B9D61-6DFA-44DD-9A48-539779B594BF.jpeg"
+              alt="Mercedes-Benz"
+            />
+            <img
+              src="35528ECB-894F-4A10-A8CE-E19036617376.jpeg"
+              alt="Buggati"
+            />
+            <img src="2634D207-FF1B-4A7B-9EB7-D46A8380E9F2.jpeg" alt="Volvo" />
+            <img
+              src="510C8CDE-BA21-4580-9A82-B8EB6544BF72.jpeg"
+              alt="Porsche"
+            />
+            <img src="6CC2C9A4-24E7-499A-AADA-C51E4664B2C7.jpeg" alt="Toyota" />
+            <img
+              src="60F12BC4-6420-425A-8172-FF12242AD448_4_5005_c.jpeg"
+              alt="Tesla"
+            />
+
+            <img
+              src="3D636ED5-B56C-4262-8AC6-C94FC2BFFF27_4_5005_c.jpeg"
+              alt="Rolls-Royce"
+            />
+            <img src="5EBB1EC4-068E-4258-8EE2-7860E62884BA.jpeg" alt="Lexus" />
+            <img
+              src="5480A4BA-D6EF-4F1E-ABA0-C51D79B50D27.jpeg"
+              alt="Hyundai"
+            />
+            <img src="D51431C9-D624-41CE-A9C9-359E653A55EF.jpeg" alt="Honda" />
+            <img src="0C9E8BC7-2DE1-4153-94E4-565E18703FB6.jpeg" alt="BMW" />
+            <img
+              src="697B9D61-6DFA-44DD-9A48-539779B594BF.jpeg"
+              alt="Mercedes-Benz"
+            />
+            <img
+              src="35528ECB-894F-4A10-A8CE-E19036617376.jpeg"
+              alt="Buggati"
+            />
+            <img src="2634D207-FF1B-4A7B-9EB7-D46A8380E9F2.jpeg" alt="Volvo" />
+            <img
+              src="510C8CDE-BA21-4580-9A82-B8EB6544BF72.jpeg"
+              alt="Porsche"
+            />
+            <img src="6CC2C9A4-24E7-499A-AADA-C51E4664B2C7.jpeg" alt="Toyota" />
+            <img
+              src="60F12BC4-6420-425A-8172-FF12242AD448_4_5005_c.jpeg"
+              alt="Tesla"
+            />
+
+            <img
+              src="3D636ED5-B56C-4262-8AC6-C94FC2BFFF27_4_5005_c.jpeg"
+              alt="Rolls-Royce"
+            />
+            <img src="5EBB1EC4-068E-4258-8EE2-7860E62884BA.jpeg" alt="Lexus" />
+            <img
+              src="5480A4BA-D6EF-4F1E-ABA0-C51D79B50D27.jpeg"
+              alt="Hyundai"
+            />
+            <img src="D51431C9-D624-41CE-A9C9-359E653A55EF.jpeg" alt="Honda" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-us">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>Have questions? Get in touch with us.</p>
+
+        <div class="contact-content">
+          <!-- Contact Form -->
+          <form class="contact-form" onsubmit="return validateForm()">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <textarea
+              id="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <!-- App Store & Google Play -->
+          <div class="app-links">
+            <h3>Get Our App</h3>
+            <p>Download our app for a better experience</p>
+            <div class="app-buttons">
+              <a href="#"
+                ><img
+                  src="0C1072E5-82CF-4379-BB30-8BB0692CE521.jpeg"
+                  alt="Google Play"
+              /></a>
+              <a href="#"
+                ><img
+                  src="AF4FEA8A-4587-480A-905B-F40871C167FF.jpeg"
+                  alt="App Store"
+              /></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal</p>
+            <p><i class="fas fa-envelope"></i> support@example.com</p>
+            <p><i class="fas fa-phone"></i> +977 9801234567</p>
+          </div>
+
+          <!-- Social Media -->
+          <div class="social-media">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2025 YourCompany. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d1b6b5784c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="car.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
