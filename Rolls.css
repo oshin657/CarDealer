@@ -9,6 +9,21 @@
     padding: 0 20px;
   }
 
+  header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: white; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+
+  .nav-item a{
+    font-size: small;
+    font-weight: lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
   .rolls-royce-history {
     padding: 40px 0;
     background-color: #f8f8f8;
